@@ -1,0 +1,72 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #343a40;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: 2px solid #343a40;
+    border-left: none;
+    background-color: #343a40;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
+
+input[type="submit"]:hover:not(:disabled) {
+    background-color: #495057;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+#tasks li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tasks li:hover {
+    background-color: #f1f3f5;
+}
